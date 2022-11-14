@@ -1,3 +1,15 @@
+This has the following setup:
+
+- [Vanilla extract](https://vanilla-extract.style/)
+- NextJS
+  - super easy, just using the plugin
+- Storybook
+  - you can spot the `.storybook/vanilla-extract.js` file which adds the webpack config
+- Playwright
+  - playwright-ct.config.ts required some custom plugins config to work with it
+
+## Next boilerplate
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
