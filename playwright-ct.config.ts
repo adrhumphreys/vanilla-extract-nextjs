@@ -1,5 +1,6 @@
 import type { PlaywrightTestConfig } from "@playwright/experimental-ct-react";
 import { devices } from "@playwright/experimental-ct-react";
+import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -27,6 +28,10 @@ const config: PlaywrightTestConfig = {
 
     /* Port to use for Playwright component endpoint. */
     ctPort: 3100,
+
+    ctViteConfig: {
+      plugins: [vanillaExtractPlugin()],
+    },
   },
 
   /* Configure projects for major browsers */

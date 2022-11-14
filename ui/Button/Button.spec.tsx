@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/experimental-ct-react";
-
-import { Button } from "./BasicButton";
+import React from "react";
+import { Button } from "./Button";
 
 test("event should work", async ({ mount }) => {
   let clicked = false;
@@ -15,6 +15,8 @@ test("event should work", async ({ mount }) => {
 
   // Perform locator click. This will trigger the event.
   await component.click();
+
+  await expect(component).toHaveScreenshot();
 
   // Assert that respective events have been fired.
   expect(clicked).toBeTruthy();
