@@ -1,6 +1,7 @@
 import type { PlaywrightTestConfig } from "@playwright/experimental-ct-react";
 import { devices } from "@playwright/experimental-ct-react";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
+import svgr from "vite-plugin-svgr";
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -30,7 +31,7 @@ const config: PlaywrightTestConfig = {
     ctPort: 3100,
 
     ctViteConfig: {
-      plugins: [vanillaExtractPlugin()],
+      plugins: [vanillaExtractPlugin(), svgr({ exportAsDefault: true })],
       // If we don't include this, then we will need to import React in every
       // component which is not fun
       esbuild: {

@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     path.resolve("./.storybook/vanilla-extract.js"),
+    path.resolve("./.storybook/svgr.js"),
   ],
   framework: "@storybook/react",
   core: {
