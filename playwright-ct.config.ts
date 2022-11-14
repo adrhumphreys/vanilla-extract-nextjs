@@ -31,6 +31,11 @@ const config: PlaywrightTestConfig = {
 
     ctViteConfig: {
       plugins: [vanillaExtractPlugin()],
+      // If we don't include this, then we will need to import React in every
+      // component which is not fun
+      esbuild: {
+        jsxInject: `import React from 'react'`,
+      },
     },
   },
 

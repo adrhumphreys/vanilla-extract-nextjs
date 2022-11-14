@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { AllHTMLAttributes } from "react";
+import { AllHTMLAttributes } from "react";
 import * as styles from "./Button.css";
 
 interface Props extends AllHTMLAttributes<HTMLButtonElement> {
