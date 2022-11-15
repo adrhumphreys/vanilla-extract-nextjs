@@ -16,7 +16,7 @@ export const Button = ({ children, theme = "primary", ...rest }: Props) => {
         [styles.secondary]: theme === "secondary",
       })}
     >
-      {children} - hey
+      {children}
     </button>
   );
 };

@@ -15,7 +15,7 @@ test("event should work", async ({ mount }) => {
     maxDiffPixelRatio: 0.15,
   });
 
-  // Perform locator click. This will trigger the event.
+  // Expand the accordian
   await component.click();
 
   await expect(component).toContainText("100% carrots");
