@@ -6,8 +6,8 @@ on:
     types: [created]
 
 jobs:
-  playwright-snapshots:
-    name: playwright-update-snapshots
+  update_playwright_snapshots:
+    name: Update Playwright snapshots
     # This job will only run if the comment was on a pull requests and matches the slash command
     # if: ${{ github.event.issue.pull_request && github.event.comment.body == '/update-snapshots'}}
     # Common with standard build
@@ -34,6 +34,6 @@ jobs:
       # Commit the changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "[CI] Update Playwright Snapshots"
+          commit_message: "[CI] Updated Playwright snapshots"
           branch: ${{ github.head_ref }}
           file_pattern: __snapshots__/\*.png
