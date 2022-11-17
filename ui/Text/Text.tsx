@@ -1,27 +1,26 @@
-import { createElement, ReactNode } from 'react';
-import type { CSSProperties } from 'react';
-import clsx from 'clsx';
-import { sprinkles, Sprinkles } from './Text.css';
+import { createElement, ReactNode } from "react";
+import type { CSSProperties } from "react";
+import clsx from "clsx";
+import { sprinkles, Sprinkles } from "./Text.css";
 
 type TextElements =
-  | 'h1'
-  | 'h2'
-  | 'h3'
-  | 'h4'
-  | 'h5'
-  | 'p'
-  | 'span'
-  | 'div'
-  | 'label'
-  | 'caption';
+  | "h1"
+  | "h2"
+  | "h3"
+  | "h4"
+  | "h5"
+  | "p"
+  | "span"
+  | "div"
+  | "label"
+  | "caption";
 
 type Props = {
-  align?: Sprinkles['align'];
-  size?: Sprinkles['size'];
-  weight?: Sprinkles['fontWeight'];
-  color?: Sprinkles['color'];
-  marginBottom?: Sprinkles['marginBottom'];
-  stretch?: Sprinkles['fontStretch']
+  align?: Sprinkles["align"];
+  size?: Sprinkles["size"];
+  weight?: Sprinkles["fontWeight"];
+  color?: Sprinkles["color"];
+  marginBottom?: Sprinkles["marginBottom"];
   // Shows condensed text if the theme supports it
   condensed?: boolean;
   as?: TextElements;
@@ -42,7 +41,7 @@ export const Text = ({
   UNSAFE_style = {},
   ...props
 }: Props) => {
-  const component = as ?? 'p';
+  const component = as ?? "p";
 
   return createElement(component, {
     ...props,
@@ -52,13 +51,12 @@ export const Text = ({
       sprinkles({
         align,
         color,
-        fontStretch: condensed ? 'default' : undefined,
         marginBottom,
         size,
         weight,
-      }),
+      })
     ),
   });
 };
 
-Text.displayName = 'Text';
+Text.displayName = "Text";
