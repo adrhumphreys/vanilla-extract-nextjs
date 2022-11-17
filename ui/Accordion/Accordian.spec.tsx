@@ -11,15 +11,15 @@ test("event should work", async ({ mount }) => {
   await expect(component).toContainText("Ingredients");
   await expect(component).not.toContainText("100% carrots");
 
-  await expect(component).toHaveScreenshot("closed.png", {
-    maxDiffPixelRatio: 0.15,
-  });
+  // await expect(component).toHaveScreenshot("closed.png", {
+  //   maxDiffPixelRatio: 0.15,
+  // });
 
   // Expand the accordian
   await component.click();
 
   await expect(component).toContainText("100% carrots");
-  await expect(component).toHaveScreenshot("open.png", {
-    maxDiffPixelRatio: 0.15,
-  });
+  // await expect(component).toHaveScreenshot("open.png", {
+  //   maxDiffPixelRatio: 0.15,
+  // });
 });

@@ -16,8 +16,6 @@ test("event should work", async ({ mount }) => {
   // Perform locator click. This will trigger the event.
   await component.click();
 
-  await expect(component).toHaveScreenshot();
-
   // Assert that respective events have been fired.
   expect(clicked).toBeTruthy();
 });
