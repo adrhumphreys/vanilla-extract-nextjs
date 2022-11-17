@@ -2,7 +2,15 @@
 name: "Playwright"
 
 # Event for the workflow
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - "main"
+      - "releases/**"
+  push:
+    branches:
+      - "main"
+      - "releases/**"
 
 # List of jobs
 jobs:
