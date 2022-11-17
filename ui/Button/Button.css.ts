@@ -16,7 +16,7 @@ export const button = style({
 export const primary = style([
   button,
   {
-    backgroundColor: "red",
+    backgroundColor: "green",
   },
 ]);
 
