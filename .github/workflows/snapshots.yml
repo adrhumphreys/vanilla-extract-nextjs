@@ -1,10 +1,7 @@
 name: Update Snapshots
 
-on:
-  # Run any time any issue/PR has a new comment
-  issue_comment:
-    types:
-      - created
+# Event for the workflow
+on: pull_request
 
 jobs:
   update_playwright_snapshots:
