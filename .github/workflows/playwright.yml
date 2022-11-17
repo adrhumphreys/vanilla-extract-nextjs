@@ -2,7 +2,15 @@
 name: "Playwright"
 
 # Event for the workflow
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - "main"
+      - "releases/**"
+  push:
+    branches:
+      - "main"
+      - "releases/**"
 
 # List of jobs
 jobs:
@@ -15,7 +23,7 @@ jobs:
         with:
           node-version: 16
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Install playwright browsers
         run: npx playwright install --with-deps
       - name: Run tests
