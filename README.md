@@ -8,6 +8,34 @@ This has the following setup:
 - Playwright
   - playwright-ct.config.ts required some custom plugins config to work with it
 
+## Todo
+
+- [ ] Storybook + Figma intergration
+  - Goes both ways, you can put a figma design into storybook or a storybook component linked to a figma component
+  - Value add would be hopefully making it easier for designers/devs to interact with the build component vs the designed
+  - [ ] https://www.chromatic.com/blog/connect-figma-to-storybook/
+  - [ ] https://pocka.github.io/storybook-addon-designs/?path=/story/docs-figma-examples--embed-file
+- [ ] Chromatic
+- [ ] Test storybook UI tests
+- [ ] Solve the successful build when theres changes instead of a "pending" build
+
+### Chromatic
+
+- Fairly easy to use
+- Provides an interface to review the components and provide feedback
+- Support are super helpful on a free tier. They replied with answers specific to the issues I was dealing with (wasn't using company email during this either)
+
+### Vercel
+
+- Preview deploys with comments are great (really good for design review of builds, could be good for testers too)
+- Preview deploys created automatically, linked to and deploying within ~1min
+- To have a preprod -> prod process would require deployed branches (e.g. merge into release, which would be prepod, merge release into main which would be prod)
+
+### Playwright
+
+- Component testing is easy to do
+- The reporting is nice
+
 ## Next boilerplate
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
