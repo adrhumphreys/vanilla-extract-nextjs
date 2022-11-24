@@ -10,6 +10,7 @@ module.exports = {
     path.resolve("./.storybook/svgr.js"),
   ],
   framework: "@storybook/react",
+  staticDirs: ["../public"],
   core: {
     builder: "@storybook/builder-webpack5",
   },

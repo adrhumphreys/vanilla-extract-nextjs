@@ -47,7 +47,7 @@ export const resolveBreakpoints = (variant: any, attr: any, pAcc: any) => {
 };
 
 export const responsiveStyleMap = (
-  styleObj: CSS.Properties<string | ResponsiveProps<string | number>>
+  styleObj: CSS.Properties<string | number | ResponsiveProps<string | number>>
 ) =>
   style(
     Object.keys(styleObj).reduce(

@@ -22,6 +22,7 @@ const responsiveProperties = defineProperties({
       "space-around",
       "space-between",
     ],
+    flexWrap: ["wrap"],
     alignItems: ["stretch", "flex-start", "center", "flex-end"],
     marginLeft: { auto: "auto" },
     marginRight: { auto: "auto" },
@@ -42,6 +43,7 @@ const responsiveProperties = defineProperties({
     paddingX: ["paddingLeft", "paddingRight"],
     paddingY: ["paddingTop", "paddingBottom"],
     placeItems: ["justifyContent", "alignItems"],
+    wrap: ["flexWrap"],
   },
 });
 
@@ -51,7 +53,7 @@ const colorProperties = defineProperties({
   properties: {
     color: {},
     background: {
-      primary: "#fff7ed",
+      primary: "#1a005d",
       white: "#fff",
     },
   },

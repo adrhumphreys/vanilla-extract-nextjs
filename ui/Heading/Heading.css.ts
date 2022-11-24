@@ -10,32 +10,32 @@ export const root = style({
 export const fontSizes = {
   h1: responsiveStyleMap({
     fontSize: {
-      xs: "1.5rem",
-      md: "2rem",
+      xs: "2.5rem",
+      md: "5.5rem",
     },
     lineHeight: {
-      xs: 1,
-      md: 1.5,
+      xs: 1.1,
+      md: 1.1,
     },
   }),
   h2: responsiveStyleMap({
     fontSize: {
-      xs: "1.2rem",
-      md: "1.4rem",
+      xs: "1.125rem",
+      md: "1.5rem",
     },
     lineHeight: {
-      xs: 1,
-      md: 1.4,
+      xs: 1.6,
+      md: 1.3,
     },
   }),
   h3: responsiveStyleMap({
     fontSize: {
-      xs: "1.1rem",
-      md: "1.3rem",
+      xs: "1.4rem",
+      md: "2rem",
     },
     lineHeight: {
-      xs: 1,
-      md: 1.4,
+      xs: 1.15,
+      md: 1.15,
     },
   }),
   h4: responsiveStyleMap({

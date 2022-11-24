@@ -19,7 +19,7 @@ const responsiveProperties = defineProperties({
       sm: 1,
       base: 1.25,
       md: 1.22,
-      lg: 1.2,
+      lg: 1.5,
       xl: 1.09,
     },
     fontWeight: {

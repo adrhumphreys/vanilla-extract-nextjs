@@ -5,6 +5,9 @@ const withVanillaExtract = createVanillaExtractPlugin();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ["www.precisionmedia.co.nz"],
+  },
   webpack(config) {
     // https://react-svgr.com/docs/next/
     config.module.rules.push({
